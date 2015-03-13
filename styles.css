@@ -1,0 +1,100 @@
+body {
+	background: #eee;
+	margin: 0;
+}
+
+/* Layout
+-------------------------*/
+
+#wrapper {
+	width: 100%
+	padding:1em;
+	background: #fff
+}
+
+header,
+#container,
+footer {
+	margin: 0 auto;
+	width: 88%;
+	max-width: 960px;
+}
+
+/* Navigation
+-------------------------*/
+
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	max-width: 960px;
+
+}
+
+nav ul li {
+	list-style: none;
+	background: #eee;
+	border-top: 1px solid #fff;
+    padding-left: 2em;
+}
+
+nav ul li:hover {
+	background:pink;
+	}
+
+	nav ul li a { 
+        text-decoration: none;
+        padding: 1em 0;
+        display: block;
+}
+
+/* Media Queries
+-------------------------*/
+
+@media screen and (min-width: 800px) {
+	nav {
+    
+	}
+
+	nav ul li {
+		float: left;
+		width: 19.8%;
+		border-right: 1px solid #fff;
+		text-align: center;
+		padding: 0;
+    }
+
+    nav ul li:nth-child(1) {
+    	background: red
+    }
+
+    nav ul li ul {
+    	padding: 0;
+    	position: fixed;
+    	width: 19.8%;
+    	left: -999em;
+    	float: left;
+    }
+
+    nav ul li:hover ul {
+    	left: auto;
+    }
+
+    nav ul li ul li,
+    nav ul li ul li:nth-child(1) {
+    	width: 99%;
+    	padding: 0;
+    	border-right:0;
+    	border-left: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+		
